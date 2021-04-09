@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#222222">
+    <title>Time Counter</title>
+
+    <link rel="icon" href="./assets/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/fonts/FontAwesome/fontawesome-all.min.css">
+
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div id="container" class="page1">
+        <div id="timeSetPage" class="page">
+            <h3>Zamanı Ayarla</h3>
+
+            <input type="datetime-local" id="datePicker">
+            
+            <div id="contButton" class="navButton">
+                Başlat <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+        <div id="timeCounterPage" class="page">
+            <div id="backButton" class="navButton">
+                <i class="fas fa-arrow-left"></i> Yeniden Ayarla
+            </div>
+            <div class="clockWrapper">
+                <div class="clockFrame">
+                    <div id="clock">00:00:00</div>
+                </div>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <audio id="alarmSound">
+        <source src="./assets/alarm_sound.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="./assets/app.js"></script>
+</body>
+</html>
